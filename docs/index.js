@@ -3,9 +3,9 @@ function PageChanger(page) {
     document.NavForm.PullDown.options[0].selected = true;
 }
 
-var platform = navigator.platform.substr(0,3);
+var platform = navigator.platform;
 
-if ((platform == 'Android') && (platform == 'iOs')) {
+if (platform == 'Android') {
     document.write("Sajnáljuk, az oldal telefonokon még nem érhető el!")
 } 
 
